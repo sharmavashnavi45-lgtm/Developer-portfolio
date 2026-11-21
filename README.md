@@ -39,18 +39,19 @@ git clone https://github.com/<username>/developer-portfolio.git
 cd ~/developer-portfolio
 
 cat > README.md << 'RDEOF'
-# [Your Full Name] — Developer Portfolio
+# Vaishnavi— Developer Portfolio
 
-> B.Tech CSE Student | K.R. Mangalam University, Gurugram | Batch 2024-28
+> BCA(AI and DS) Student | K.R. Mangalam University, Gurugram | Batch 2026-29
 
 ---
 
 ## Repository Index
 
-| Repository | Description | Tech Stack | Status |
-|------------|-------------|------------|--------|
-| [cse103-lab-LAB3](https://github.com/[username]/cse103-lab-LAB3) | CSE103 lab — Git, APIs, Shell scripting | Git, Python, Bash | Active |
-| [developer-portfolio](https://github.com/[username]/developer-portfolio) | This portfolio index | Markdown | Active |
+| # | Repository | URL | Description | Tech Stack | Status |
+| :---: | :--- | :--- | :--- | :--- | :--- |
+| 1 | `cse103-lab-LAB3` | https://github.com/sharmavashnavi45-lgtm/cse103-lab-LAB3 | CSE103 lab — Git workflows, APIs, Shell scripting, and `src/`/`tests/`/`docs/` structure | Git, Python, Bash | Active |
+| 2 | `Dscapstone` | https://github.com/sharmavashnavi45-lgtm/Dscapstone | Data Science Capstone Project — structured data analysis | Python, Data Analytics | Active |
+| 3 | `Developer-portfolio` | https://github.com/sharmavashnavi45-lgtm/Developer-portfolio | Central portfolio index, learning roadmap, and coding platform progress tracker | Markdown, HTML/CSS | Active |
 
 ---
 
