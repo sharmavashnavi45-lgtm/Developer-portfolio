@@ -43,10 +43,15 @@ cat <<'EOF' > README.md
 
 ## Current Skills
 
-- **Python:** 60%
-- **Linux / Bash:** 50%
-- **Git / GitHub:** 65%
-- **SQL (SQLite):** 50%
+# Current Skills
+
+Python [█████░░░░░] 50%
+
+Linux / Bash [████░░░░░░] 40%
+
+Git / GitHub [█████░░░░░] 50%
+
+---
 
 ## Documents & Trackers
 
