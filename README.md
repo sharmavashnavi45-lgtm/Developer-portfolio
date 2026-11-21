@@ -50,7 +50,7 @@ cat <<'EOF' > README.md
 
 ## Documents & Trackers
 
-- **Resume:** [my_resume_v1.pdf](./my_resume_v1.pdf)
+- **Resume:** Vaishnavi Sharma Resume
 - **Learning Roadmap:** [LEARNING_ROADMAP.md](./LEARNING_ROADMAP.md)
 - **Progress Tracker:** [PROGRESS.md](./PROGRESS.md)
 EOF
