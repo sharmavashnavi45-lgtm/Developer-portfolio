@@ -50,7 +50,7 @@ cat <<'EOF' > README.md
 
 ## Documents & Trackers
 
-- **Resume:** Vaishnavi Sharma Resume
+- **Resume:** blob:https://github.com/b75230bd-2ac3-49d4-a1cf-65440209cef0
 - **Learning Roadmap:** [LEARNING_ROADMAP.md](./LEARNING_ROADMAP.md)
 - **Progress Tracker:** [PROGRESS.md](./PROGRESS.md)
 EOF
