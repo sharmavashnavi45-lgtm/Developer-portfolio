@@ -20,65 +20,60 @@ Welcome to my official Developer Portfolio repository! This space serves as the 
 
 ---
 
-### 📂 Repository Structure & Lab Work
-- `my_resume_v1.pdf` — Professional ATS-compliant technical resume (CSE103 Lab 4 Submission).
-- Additional lab files and documentation tracking my progress in modern software development workflows and terminal operations.
-- ### Step 2: Set GitHub Repository Metadata
-1. Open `cse103-lab-LAB3` on GitHub and click the **gear icon** next to **About**.
-2. Set **Description** to: `Lab work for CSE103 — Git/GitHub workflows, shell scripting, and REST API interaction.`
-3. Leave **Website** blank.
-4. Add **Topics** one by one: `python` `linux` `git` `github` `shell-scripting` `cse103` `student-project`.
-5. Click **Save changes**.
+#!/usr/bin/env bash
+set -e
 
-### Step 4: Create and Push `developer-portfolio`
-First create an empty public repository named `developer-portfolio` on GitHub (do not initialize with a README or `.gitignore`), then run:
+REPO_DIR="${1:-Developer-portfolio}"
+cd "$REPO_DIR"
 
-```bash
-cd ~
-git clone https://github.com/<username>/developer-portfolio.git
-cd ~/developer-portfolio
+mkdir -p src tests docs
 
-cat > README.md << 'RDEOF'
-# Vaishnavi— Developer Portfolio
+cat <<'EOF' > README.md
+# Vaishnavi Sharma — Developer Portfolio
 
-> BCA(AI and DS) Student | K.R. Mangalam University, Gurugram | Batch 2026-29
-
----
+**BCA (AI & Data Science)** | K.R. Mangalam University, Gurugram | Batch 2026–29
 
 ## Repository Index
 
 | # | Repository | URL | Description | Tech Stack | Status |
 | :---: | :--- | :--- | :--- | :--- | :--- |
-| 1 | `cse103-lab-LAB3` | https://github.com/sharmavashnavi45-lgtm/cse103-lab-LAB3 | CSE103 lab — Git workflows, APIs, Shell scripting, and `src/`/`tests/`/`docs/` structure | Git, Python, Bash | Active |
+| 1 | `cse103-lab-LAB3` | https://github.com/sharmavashnavi45-lgtm/cse103-lab-LAB3 | CSE103 lab — Git workflows, APIs, Shell scripting, and `src/`/`tests/`/`docs/` layout | Git, Python, Bash | Active |
 | 2 | `Dscapstone` | https://github.com/sharmavashnavi45-lgtm/Dscapstone | Data Science Capstone Project — structured data analysis | Python, Data Analytics | Active |
 | 3 | `Developer-portfolio` | https://github.com/sharmavashnavi45-lgtm/Developer-portfolio | Central portfolio index, learning roadmap, and coding platform progress tracker | Markdown, HTML/CSS | Active |
 
----
-
 ## Current Skills
 
-Python [█████░░░░░] 50%
-Linux / Bash [████░░░░░░] 40%
-Git / GitHub [█████░░░░░] 50%
+- **Python:** 60%
+- **Linux / Bash:** 50%
+- **Git / GitHub:** 65%
+- **SQL (SQLite):** 50%
 
----
+## Documents & Trackers
 
-## Learning Roadmap
+- **Resume:** [my_resume_v1.pdf](./my_resume_v1.pdf)
+- **Learning Roadmap:** [LEARNING_ROADMAP.md](./LEARNING_ROADMAP.md)
+- **Progress Tracker:** [PROGRESS.md](./PROGRESS.md)
+EOF
 
-See [LEARNING_ROADMAP.md](./LEARNING_ROADMAP.md) for my full 6-semester plan.
+cat <<'EOF' > .gitignore
+# Python & virtual environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
 
-## Progress Tracker
+# IDEs & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+EOF
 
-See [PROGRESS.md](./PROGRESS.md) for coding platform progress.
-RDEOF
+git status -s
+git add README.md .gitignore src tests docs
+git commit -m "feat: add tabular repository index and update repo structure"
+git push origin main
 
-git add README.md
-git commit -m "feat: initialise developer portfolio index"
-git push -u origin main
-
----
-
-### 💼 Connect With Me
-- **GitHub:** [sharmavashnavi45-lgtm](https://github.com/sharmavashnavi45-lgtm)
-- **LinkedIn:** [Vaishnavi Sharma](https://www.linkedin.com/in/vaishnavi-sharma-106808430)
-- **Email:** sharmavashnavi45@gmail.com
+echo "Result: Repository index updated and pushed successfully."
